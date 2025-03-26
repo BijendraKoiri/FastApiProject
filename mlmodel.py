@@ -6,10 +6,11 @@ import httpx
 # fast api applications 
 app = FastAPI()
 
+# Create Pydantic model
 class InputData(BaseModel):
     features: list[float]
 
-
+# Create Post request
 @app.post("/predict")
 def predict(data:InputData):
     X = np.array(data.features)
