@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import httpx
 
-
+# fast api applications 
 app = FastAPI()
 
 class InputData(BaseModel):
