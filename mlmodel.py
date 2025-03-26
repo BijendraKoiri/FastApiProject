@@ -6,6 +6,7 @@ import httpx
 # fast api applications 
 app = FastAPI()
 
+# Create Pydantic model
 class InputData(BaseModel):
     features: list[float]
 
